@@ -1,6 +1,6 @@
 /* General Styles */
 body {
-  font-family: 'Comic Sans MS', sans-serif;
+  font-family: 'Patrick Hand', 'Baloo 2', sans-serif;
   background: #fff0f5;
   margin: 0;
   padding: 0;
@@ -16,6 +16,10 @@ header {
 
 h1 {
   margin: 0;
+}
+
+p {
+  margin: 5px 0;
 }
 
 nav {
@@ -67,21 +71,21 @@ button:hover {
   color: white;
 }
 
-#plantsGrid {
+#gardenGrid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
   gap: 15px;
   margin-top: 20px;
 }
 
-.plant {
+.plant-card {
   background: #fff;
   border-radius: 12px;
   padding: 10px;
   box-shadow: 0 4px 6px rgba(0,0,0,0.1);
 }
 
-.plant img {
+.plant-card img {
   width: 60px;
   height: 60px;
 }
@@ -94,3 +98,9 @@ button:hover {
   margin: 10px;
 }
 
+.store-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+  gap: 10px;
+  margin-top: 10px;
+}
