@@ -1,10 +1,8 @@
-/* General Styles */
 body {
   font-family: 'Patrick Hand', 'Baloo 2', sans-serif;
-  background: #fff0f5;
-  margin: 0;
-  padding: 0;
+  margin: 0; padding: 0;
   text-align: center;
+  background: #fff0f5;
   color: #333;
 }
 
@@ -14,93 +12,39 @@ header {
   box-shadow: 0 4px 6px rgba(0,0,0,0.1);
 }
 
-h1 {
-  margin: 0;
-}
+h1 { margin: 0; }
+p { margin: 5px 0; }
 
-p {
-  margin: 5px 0;
-}
-
-nav {
-  margin: 10px 0;
-}
-
+nav { margin: 10px 0; }
 nav button {
-  padding: 10px 15px;
-  margin: 5px;
-  border: none;
-  border-radius: 12px;
-  background-color: #ffb6c1;
-  color: white;
-  font-weight: bold;
-  cursor: pointer;
+  padding: 10px 15px; margin: 5px;
+  border: none; border-radius: 12px;
+  background-color: #ffb6c1; color: white;
+  font-weight: bold; cursor: pointer;
   transition: transform 0.2s;
 }
+nav button:hover { transform: scale(1.1); }
 
-nav button:hover {
-  transform: scale(1.1);
-}
+main { padding: 20px; }
+section { display: none; }
+section.active { display: block; }
 
-main {
-  padding: 20px;
-}
-
-section {
-  display: none;
-}
-
-section.active {
-  display: block;
-}
-
-input, select {
-  padding: 8px;
-  margin: 5px;
-  border-radius: 8px;
-  border: 1px solid #ccc;
-}
-
-button {
-  cursor: pointer;
-  transition: background 0.2s;
-}
-
-button:hover {
-  background: #ff69b4;
-  color: white;
-}
+input, select { padding: 8px; margin: 5px; border-radius: 8px; border: 1px solid #ccc; }
+button:hover { background: #ff69b4; color: white; }
 
 #gardenGrid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-  gap: 15px;
-  margin-top: 20px;
+  display: grid; grid-template-columns: repeat(auto-fit, minmax(100px,1fr)); gap: 15px; margin-top: 20px;
 }
 
 .plant-card {
-  background: #fff;
-  border-radius: 12px;
-  padding: 10px;
+  background: #fff; border-radius: 12px; padding: 10px;
   box-shadow: 0 4px 6px rgba(0,0,0,0.1);
 }
 
-.plant-card img {
-  width: 60px;
-  height: 60px;
-}
+.plant-card img { width: 60px; height: 60px; }
 
-.plant-controls button {
-  margin: 5px;
-}
-
-.game-buttons button {
-  margin: 10px;
-}
+.plant-controls button, .game-buttons button { margin: 5px; }
 
 .store-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
-  gap: 10px;
-  margin-top: 10px;
+  display: grid; grid-template-columns: repeat(auto-fit, minmax(80px, 1fr)); gap: 10px; margin-top: 10px;
 }
