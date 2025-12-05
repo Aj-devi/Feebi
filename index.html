@@ -1,25 +1,29 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Feebi</title>
-  <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Feebi 🌸</title>
+<link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&family=Baloo+2:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header>
     <h1>🌸 Feebi 🌸</h1>
+    <p>Coins: <span id="coins">0</span> | Water: <span id="waterCount">3</span> | Food: <span id="foodCount">3</span></p>
   </header>
 
   <nav>
-    <button id="financeBtn">Finance</button>
-    <button id="gardenBtn">Garden</button>
-    <button id="gamesBtn">Mini-Games</button>
+    <button id="financeBtn">Finance 💰</button>
+    <button id="gardenBtn">Garden 🌱</button>
+    <button id="gamesBtn">Mini-Games 🎮</button>
+    <button id="storeBtn">Store 🛒</button>
   </nav>
 
   <main>
     <!-- Finance Section -->
-    <section id="financeSection">
+    <section id="financeSection" class="active">
       <h2>Finance</h2>
       <div class="finance-form">
         <input type="text" id="entryName" placeholder="Name">
@@ -28,6 +32,14 @@
           <option value="earning">Earning</option>
           <option value="expense">Expense</option>
         </select>
+        <select id="entryFrequency">
+          <option value="once">Once</option>
+          <option value="weekly">Weekly</option>
+          <option value="monthly">Monthly</option>
+          <option value="yearly">Yearly</option>
+        </select>
+        <input type="date" id="entryDate">
+        <input type="text" id="entryNote" placeholder="Notes">
         <button id="addEntryBtn">Add Entry</button>
       </div>
       <ul id="financeList"></ul>
@@ -37,24 +49,35 @@
     <!-- Garden Section -->
     <section id="gardenSection">
       <h2>Garden 🌱</h2>
-      <p>Water: <span id="waterCount">3</span> | Food: <span id="foodCount">3</span></p>
-      <div id="plantsGrid"></div>
+      <div id="gardenGrid"></div>
       <div class="plant-controls">
-        <button id="waterPlantBtn">Water Plant</button>
-        <button id="feedPlantBtn">Feed Plant</button>
-        <button id="addPlantBtn">Plant New Seed 🌱</button>
+        <button id="waterPlantBtn">Water Plant 💧</button>
+        <button id="feedPlantBtn">Feed Plant 🍎</button>
       </div>
     </section>
 
     <!-- Mini-Games Section -->
     <section id="gamesSection">
       <h2>Mini-Games 🎮</h2>
-      <p>Play to earn food or water!</p>
+      <p>Play to earn coins, food, and water!</p>
       <div class="game-buttons">
         <button id="tapGameBtn">Tap Game</button>
         <button id="matchGameBtn">Match Game</button>
       </div>
       <div id="gameArea"></div>
+    </section>
+
+    <!-- Store Section -->
+    <section id="storeSection">
+      <h2>Store 🛒</h2>
+      <div id="plantStore">
+        <h3>Plants</h3>
+        <div class="store-grid"></div>
+      </div>
+      <div id="potStore">
+        <h3>Pots</h3>
+        <div class="store-grid"></div>
+      </div>
     </section>
   </main>
 
